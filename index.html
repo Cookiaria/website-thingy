@@ -3,23 +3,28 @@
 <head>
   <meta charset="utf-8">
   <title>whats up</title>
-  <style>
-    .gato {
-      width: 50%
-    }
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh
-    }
-  </style>
 </head>
+<style>
+  #gato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh
+  }
+</style>
 <body>
-
-  <div>
-    <img src="./assets/stupidcat.png" alt="whats up" class="gato">
+  <div id="gato">
+    <img src="./assets/stupidcat.png" id="idiote"/>
   </div>
-  
+  <audio id="prototype" src="./assets/meow.mp3"></audio>
+  <script>
+    const image = document.getElementById('idiote');
+    const audio = document.getElementById('prototype');
+
+    image.addEventListener('click', () => {
+      audio.play();
+    });
+  </script>
+
 </body>
 </html>
