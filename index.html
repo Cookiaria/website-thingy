@@ -5,18 +5,37 @@
   <title>whats up</title>
 </head>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+  #secret_colonthree {
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff
+  }
+
   #gato {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 98vh
+    height: 85vh;
+  }
+  
+  #idiote {
+    height: 35%
   }
 </style>
 <body>
-  <div id="gato">
-    <img src="./assets/stupidcat.png" id="idiote"/>
+
+  <div>
+    <body> 
+      <h1 align="center" id="secret_colonthree">Hello Dark Mode Extension User</h1>
+    </body>
   </div>
+
+  <div id="gato">
+    <img id="idiote" src="./assets/idiot.gif" class="post-thumb" onclick='this.src=this.src' />
+  </div>
+
   <audio id="prototype" src="./assets/meow.mp3"></audio>
+
   <script>
     const image = document.getElementById('idiote');
     const audio = document.getElementById('prototype');
