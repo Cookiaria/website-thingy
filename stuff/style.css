@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Renogare';
+    src: url(/assets/renogare.otf);
+}
+
+.headertext p {
+    margin: 0;
+}
+
+.title {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+.headertext {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    border: 2px black solid;
+}
+
+.logo {
+    width: 100px;
+    padding: 5%;
+    cursor: pointer
+}
+
+#subtitle {
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    text-decoration-line: underline;
+}
+
+.tablinks {
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.05em;
+    margin-left: 8px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px black solid;
+}
+
+.tablinks:hover {
+    color: #008cff
+}
+
+#tabs {
+    margin-top: 14px;
+}
+
+#tabs a {
+    padding-top: 3px
+}
+
+.actualcontent {
+    font-family: 'Renogare';
+    margin-top: 40px;
+    border: 2px black solid;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#greg {
+    width: 250px;
+}
