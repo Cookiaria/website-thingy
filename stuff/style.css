@@ -1,8 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
     font-family: 'Renogare';
     src: url(/assets/renogare.otf);
+}
+
+.hugetext{
+    font-size: 100px;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
+
+body {
+    background-color: #222;
 }
 
 .headertext p {
@@ -16,33 +38,35 @@
 }
 
 .headertext {
-    padding-left: 24px;
+    padding-left: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: rgb(255, 208, 208);
 }
 
 header {
-    background-color: white;
+    background-color: #222;
     display: flex;
-    border: 2px black solid;
+    border: 2px rgb(190, 190, 190) solid;
 }
 
 .logo {
     width: 100px;
-    padding: 5%;
+    padding-top: 4px;
+    padding-left: 6px;
     cursor: pointer
 }
 
-#subtitle {
+#random-subtitle {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 1.2em;
-    color: black;
+    color: rgb(241, 241, 241);
 }
 
 .links {
     text-decoration: none;
-    color: black;
+    color: rgb(241, 241, 241);
 }
 
 .links:hover {
@@ -51,7 +75,7 @@ header {
 
 .tablinks {
     text-decoration: none;
-    color: black;
+    color: rgb(241, 241, 241);
     font-family: 'Ubuntu Mono', monospace;
     font-weight: bold;
     font-size: 1.05em;
@@ -59,15 +83,15 @@ header {
     padding-bottom: 1px;
     padding-left: 8px;
     padding-right: 8px;
-    border: 2px black solid;
+    border: 2px rgb(190, 190, 190) solid;
 }
 
 .tablinks:hover {
-    color: #008cff
+    color: #008cff;
 }
 
 #tabs {
-    margin-top: 14px;
+    margin-top: 3px;
 }
 
 #tabs a {
@@ -75,13 +99,53 @@ header {
 }
 
 .actualcontent {
-    font-family: 'Renogare';
+    font-family: "Noto Sans", sans-serif;
     margin-top: 40px;
-    border: 2px black solid;
-    text-align: center;
+    border: 2px rgb(190, 190, 190) solid;
+    color: white;
     font-size: 1.2em;
+}
+
+/* everything markdown related */
+
+.actualcontent h1, h2, h3, p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+/* make links made with markdown orange */
+.actualcontent p a {
+    color: #ff8600;
 }
 
 #greg {
     width: 250px;
+}
+
+/* codeblock !!!!! i think */
+[class*="language-"] [class="highlight"] [class=highlight] {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 2px rgb(102, 102, 102) solid;
+    border-radius: 6px;
+    background-color: rgb(29, 29, 29);
+    white-space: pre-wrap;
+}
+
+p:nth-child(6) > code {
+    background-color: rgb(29, 29, 29);
+    border-radius: 4px;
+    border: 2px rgb(61, 61, 61) solid;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/*
+.highlight code {
+    word-wrap: break-word !important;
 }
