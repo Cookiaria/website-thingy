@@ -1,1 +1,3 @@
 markdown: kramdown
+highlighter: rouge
+remote_theme: vadiole/github-markdown-theme

@@ -1,0 +1,22 @@
+/* codeblock !!!!! i think */
+[class*="language-"] [class="highlight"] [class=highlight] {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 2px rgb(102, 102, 102) solid;
+    border-radius: 6px;
+    background-color: rgb(29, 29, 29);
+    white-space: pre-wrap;
+}
+
+p code {
+    background-color: rgb(29, 29, 29);
+    border-radius: 4px;
+    border: 2px rgb(61, 61, 61) solid;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+

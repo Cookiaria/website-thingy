@@ -3,43 +3,20 @@ layout: default
 title: Cookiaria Website
 ---
 
-# WHAT !!!!!!
-please ignore everything here i am just testing if this still works on github lol
+# Welcome to hell :3
 
-aaaaaaa [do links work just like that](https://cookiaria.xyz)
+<img src="assets/gregoriah/excited.gif" class="centered resized">
 
-Example code that does not make sense at all;
+⚠ This website is still a WIP, still no support for mobile since i'm still trying to figure out how to do CSS stuff ⚠
 
-```diff
-- dingus
-+ dingus^2
-
-wjat the
-
-```
-
-```javascript
-function sayHello(name) {
-  if (!name) {
-    console.log('Hello World');
-  } else {
-    console.log(`Hello ${name}`);
-  }  
-}  
-```
-
-funny `test codeblock` inside normal text
-
-<p class="hugetext">🐈🐱 awesome</p>
-
-More stupid text teeheehee
-
-
-## markdown funnies
-
-<p align="center">
-  <img src="assets/pez.jpg" alt="pez"/>
-</p>
-
-### fuck
-
+## TODO: 
+- ~~Randomized subtitle messages~~
+- ~~make meow noise when clicking the Cat~~
+- ~~include my stupid oc on the banner~~
+- MOBILE SUPPORT.
+- About page (its just me testing shit right now lol)
+- Actual proper welcome page because this one currently sucks ✅
+- Index/search for all pages on the website 
+- Art gallery
+- more stuff to footer (source code, "copyleft 2024", back to top, etc)
+- more to come 𝓶𝓪𝔂𝓫𝓮

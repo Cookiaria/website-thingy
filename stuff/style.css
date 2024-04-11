@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('/stuff/codeblocks.css');
 
-@font-face {
-    font-family: 'Renogare';
-    src: url(/assets/renogare.otf);
+body {
+    margin: 8px 15% 8px 15%;
 }
 
 .hugetext{
@@ -14,6 +14,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.resized {
+    width: 25%;
 }
 
 img.emoji {
@@ -49,6 +53,10 @@ header {
     background-color: #222;
     display: flex;
     border: 2px rgb(190, 190, 190) solid;
+    background-image: url(../assets/vibin.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: -33px;
 }
 
 .logo {
@@ -71,6 +79,7 @@ header {
 
 .links:hover {
     text-decoration-line: underline;
+    color: #ff8600;
 }
 
 .tablinks {
@@ -112,6 +121,7 @@ header {
     margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* make links made with markdown orange */
@@ -119,33 +129,16 @@ header {
     color: #ff8600;
 }
 
-#greg {
-    width: 250px;
+footer {
+    margin-top: 40px;
+    font-family: 'Ubuntu Mono', monospace;
+    border: 2px rgb(190, 190, 190) solid;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
 }
 
-/* codeblock !!!!! i think */
-[class*="language-"] [class="highlight"] [class=highlight] {
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
-    padding: 10px;
-    border: 2px rgb(102, 102, 102) solid;
-    border-radius: 6px;
-    background-color: rgb(29, 29, 29);
-    white-space: pre-wrap;
-}
-
-p:nth-child(6) > code {
-    background-color: rgb(29, 29, 29);
-    border-radius: 4px;
-    border: 2px rgb(61, 61, 61) solid;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-/*
-.highlight code {
-    word-wrap: break-word !important;
+.footerlinks {
+    margin-bottom: 20px;
+    text-decoration: underline !important;
 }
