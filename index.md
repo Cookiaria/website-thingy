@@ -8,6 +8,7 @@ title: Cookiaria Website
 <img src="assets/gregoriah/excited.gif" class="centered resized">
 
 ⚠ This website is still a WIP, still no support for mobile since i'm still trying to figure out how to do CSS stuff ⚠
+github doesn't like updating my css file that often so if for some reason the website is broken, press `Shift` + `F5` or hold shift while clicking the refresh button
 
 ## TODO: 
 - ~~Randomized subtitle messages~~
