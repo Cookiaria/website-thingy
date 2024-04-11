@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 213,187,156,321 GAZILLION DOLLARS
+title: About
 ---
 
 # WHAT !!!!!!
@@ -34,8 +34,7 @@ More stupid text teeheehee
 ## markdown funnies
 
 <p align="center">
-  <img src="assets/pez.jpg" alt="pez"/>
+  <img src="assets/pez.jpg" alt="pez"/> <img src="assets/pez.jpg" alt="pez"/> pezcado <img src="assets/pez.jpg" alt="pez"/>
 </p>
 
-### fuck
 

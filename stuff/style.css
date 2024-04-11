@@ -3,7 +3,9 @@
 @import url('/stuff/codeblocks.css');
 
 body {
-    margin: 8px 15% 8px 15%;
+    margin: 8px auto;
+    max-width: 900px;
+    min-width: 730px;
 }
 
 .hugetext{
@@ -100,7 +102,7 @@ header {
 }
 
 #tabs {
-    margin-top: 3px;
+    margin-top: 16px;
 }
 
 #tabs a {
@@ -110,7 +112,7 @@ header {
 .actualcontent {
     font-family: "Noto Sans", sans-serif;
     margin-top: 40px;
-    border: 2px rgb(190, 190, 190) solid;
+    border: 2px rgb(55, 54, 54) solid;
     color: white;
     font-size: 1.2em;
 }

@@ -20,3 +20,22 @@ p code {
     padding-bottom: 2px;
 }
 
+.highlight .c, .c1 {
+    color: rgb(91, 153, 59);
+}
+
+.highlight .nc, .nf {
+    color: rgb(215, 186, 125);
+}
+
+.highlight .nl {
+    color: rgb(96, 204, 239);
+}
+
+.highlight .m, .p, .sx {
+    color: rgb(181, 206, 136);
+}
+
+.highlight .nb {
+    color: rgb(194, 89, 39);
+}
