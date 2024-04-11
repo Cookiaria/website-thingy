@@ -1,5 +1,6 @@
 ---
 layout: default
+title: 
 ---
 
 # Welcome to hell :3
