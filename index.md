@@ -63,4 +63,26 @@ p code {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+<<<<<<< HEAD
 ```
+=======
+```
+
+some javascript;
+```js
+console.log('Hello World');
+```
+
+## TODO: 
+- ~~Randomized subtitle messages~~
+- ~~make meow noise when clicking the Cat~~
+- ~~include my stupid oc on the banner~~
+- ~~MOBILE SUPPORT.~~
+- syntax highlighting in codeblock because why not (halfway there)
+- About page (its just me testing shit right now lol)
+- Actual proper welcome page because this one currently sucks ✅
+- Index/search for all pages on the website 
+- Art gallery
+- more stuff to footer (source code, "copyleft 2024", back to top, etc)
+- more to come 𝓶𝓪𝔂𝓫𝓮
+>>>>>>> b121fb59a44ae744cb89bff34726b3253a7bad63
