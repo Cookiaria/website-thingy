@@ -3,38 +3,4 @@ layout: default
 title: About
 ---
 
-# WHAT !!!!!!
-markdown works wonderfully [even thought it probably looks bad xd](https://cookiaria.xyz)
-
-Example code that does not make sense at all;
-
-```diff
-- dingus
-+ dingus^2
-
-wjat the
-
-```
-
-```javascript
-function sayHello(name) {
-  if (!name) {
-    console.log('Hello World');
-  } else {
-    console.log(`Hello ${name}`);
-  }  
-}  
-```
-
-funny `test codeblock` inside normal text
-
-More stupid text teeheehee
-
-
-## markdown funnies
-
-<p align="center">
-  <img src="assets/pez.jpg" alt="pez"/> <img src="assets/pez.jpg" alt="pez"/> pezcado <img src="assets/pez.jpg" alt="pez"/>
-</p>
-
-
+honestly i don't know ![nkoderp](https://cdn.discordapp.com/emojis/993333079743660073.webp?size=48&quality=lossless)

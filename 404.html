@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /404
+title: 404 its under there
+---
+
+<script>
+  function getRandomLine(lines) {
+    return lines[Math.floor(Math.random() * lines.length)];
+  }
+
+  async function random404() {
+    const response = await fetch('/assets/404.txt');
+    const text = await response.text();
+    const lines = text.split('\n').filter(line => line.trim() !== '');
+
+    const randomLine = getRandomLine(lines);
+    const parser = new DOMParser();
+    const dom = parser.parseFromString(randomLine, 'text/html');
+    document.getElementById('random404lol').append(...dom.body.childNodes);
+  }
+
+  random404();
+</script>
+
+<style>
+  .four04 {
+    margin-bottom: 30px !important;
+  }
+  .img404 {
+    width: 75%;
+  }
+  .img404stuff {
+    text-decoration: underline;
+    color: white !important;
+  }
+
+</style>
+
+<div class="centerpls">
+  <h1 class="hugetext">404</h1>
+  <h2>i dont have that lol</h2>
+  <p id="random404lol" class="four04"></p>
+</div>

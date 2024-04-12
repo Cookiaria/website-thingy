@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('/stuff/codeblocks.css');
+@import url('/assets/css/codeblocks.css');
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+    transition-duration: 0.25s;
+    background: #3a3a3a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 body {
     margin: 8px auto;
@@ -8,7 +27,15 @@ body {
     min-width: 730px;
 }
 
-.hugetext{
+.notunderlined {
+    text-decoration: none !important;
+}
+
+.underlined {
+    text-decoration: underline !important;
+}
+
+.hugetext {
     font-size: 100px;
 }
 
@@ -27,7 +54,7 @@ img.emoji {
     width: 1em;
     margin: 0 .05em 0 .1em;
     vertical-align: -0.1em;
- }
+}
 
 body {
     background-color: #222;
@@ -55,7 +82,7 @@ header {
     background-color: #222;
     display: flex;
     border: 2px rgb(190, 190, 190) solid;
-    background-image: url(../assets/vibin.png);
+    background-image: url(/assets/vibin.png);
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: -33px;
@@ -75,12 +102,11 @@ header {
 }
 
 .links {
-    text-decoration: none;
+    transition-duration: 0.25s;
     color: rgb(241, 241, 241);
 }
 
 .links:hover {
-    text-decoration-line: underline;
     color: #ff8600;
 }
 
@@ -119,16 +145,27 @@ header {
 
 /* everything markdown related */
 
-.actualcontent h1, h2, h3, p {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
+.actualcontent {
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 12px;
+    }
 }
 
 /* make links made with markdown orange */
-.actualcontent p a {
-    color: #ff8600;
+.actualcontent {
+    p a {
+        color: #ff8600;
+    }
 }
 
 footer {
@@ -143,4 +180,9 @@ footer {
 .footerlinks {
     margin-bottom: 20px;
     text-decoration: underline !important;
+}
+
+.centerpls {
+    padding: 0 auto !important;
+    text-align: center !important;
 }

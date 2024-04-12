@@ -7,12 +7,11 @@ image.addEventListener('click', () => {
   audio.play();
 });
 
-// Function to fetch a random line from an array
+// random subtitle generator !!
 function getRandomLine(lines) {
   return lines[Math.floor(Math.random() * lines.length)];
 }
 
-// Function to read the file and display a random line
 async function displayRandomLine() {
   const response = await fetch('../assets/random_messages.txt');
   const text = await response.text();
@@ -22,7 +21,6 @@ async function displayRandomLine() {
   document.getElementById('random-subtitle').textContent = randomLine;
 }
 
-// Call the function to display random line
 displayRandomLine();
 
 // twittermoji
@@ -30,4 +28,13 @@ twemoji.parse(
   document.body,
   { base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }
 )
+
+
+// scroll to top xd xd 
+function backtotop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 
