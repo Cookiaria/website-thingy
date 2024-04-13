@@ -16,8 +16,6 @@ I made art sometimes, play games, and your usual furry bullshit.
 <span style="color: #5BCEFA;">Tr</span><span style="color: #F5A9B8;">an</span><span style="color: #FFFFFF;">s ri</span><span style="color: #F5A9B8;">gh</span><span style="color: #5BCEFA;">ts</span>.
 </div> <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mM0LCWlPAL8?si=4ZQpiJkBkirZbnZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="centered"></iframe> <br>
-
 <img src="assets/gregoriah/excited.gif" class="centered resized"> <br>
 
 ⚠ This website is still a WIP, still no support for mobile since i'm still trying to figure out how to do CSS stuff ⚠
