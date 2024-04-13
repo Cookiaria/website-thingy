@@ -8,17 +8,21 @@ logoimage.addEventListener('click', () => {
 
 // random subtitle generator !!
 function getRandomLine(lines) {
-  return lines[Math.floor(Math.random() * lines.length)];
+  return lines[Math.floor(Math.random() * lines.length)].replace(/^#.*/, '').trim();
 }
 
 async function displayRandomLine() {
   const response = await fetch('/assets/random_messages.txt');
   const text = await response.text();
-  const lines = text.split('\n').filter(line => line.trim() !== '');
+  const lines = text.split('\n').filter(line => line.trim() !== '' && !line.startsWith('#'));
 
   const randomLine = getRandomLine(lines);
-  document.getElementById('random-subtitle').textContent = randomLine;
+  const parser = new DOMParser();
+  const dom = parser.parseFromString(randomLine, 'text/html');
+  document.getElementById('random-subtitle').innerHTML = "";
+  document.getElementById('random-subtitle').append(...dom.body.childNodes);
 }
+
 
 displayRandomLine();
 
@@ -38,7 +42,7 @@ function backtotop() {
 }
 
 // funny console log stuff because why not
-console.log("what are you doing here?");
+console.log("what are you doing here");
 
 console.image = function(url, size = 100) {
   const image = new Image();
