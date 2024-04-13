@@ -12,6 +12,10 @@ In short (for now); I am Cookiaria. a 20 year old random furry person that's int
 
 I made art sometimes, play games, and your usual furry bullshit.
 
+<div class="centerpls" style="font-size: 50px;">
+<span style="color: #5BCEFA;">Tr</span><span style="color: #F5A9B8;">an</span><span style="color: #FFFFFF;">s ri</span><span style="color: #F5A9B8;">gh</span><span style="color: #5BCEFA;">ts</span>.
+</div> <br>
+
 <img src="assets/gregoriah/excited.gif" class="centered resized"> <br>
 
 ⚠ This website is still a WIP, still no support for mobile since i'm still trying to figure out how to do CSS stuff ⚠
