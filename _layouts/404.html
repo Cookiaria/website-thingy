@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/xd.png">
+
+    <meta property="og:title" content="Cookiaria Website... but this page does not exist" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cookiaria.xyz" />
+    <meta property="og:image" content="https://cookiaria.xyz/assets/embed_banner.png" />
+    <meta property="og:description"
+        content="typo or something? anywho whatever you typed in does not exist in my website lol" />
+    <meta name="theme-color" content="#FF0000">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+
+    {% include header.html %}
+
+    <div class="actualcontent">
+        {{ content }}
+    </div>
+
+    <style>
+        .footer_links {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    
+        .btt {
+            transition-duration: 0.25s;
+            text-decoration: none;
+            color: white
+        }
+    
+        .btt:hover {
+            color: #ff8600
+        }
+    
+        .flinks {
+            transition-duration: 0.25s;
+            text-decoration: none;
+            color: rgb(241, 241, 241);
+        }
+    
+        .twitter:hover {
+            color: #00acee
+        }
+    
+        .git:hover {
+            color:#F80
+        }
+    
+        .yt:hover {
+            color: #f00
+        }
+        .bsky:hover {
+            color: #1184fe
+        }
+        .discord:hover {
+            color: #5662f6
+        }
+    </style>
+    
+    <footer>
+        <h2 title="honest not really, making all of this from scratch is fun and idk why :3">made with pain by cookiaria</h2>
+        <div>
+            <a href="https://github.com/Cookiaria/website-thingy" class="links underlined">Source code :3</p>
+        </div>
+        <div class="footer_links">
+            <a href="https://github.com/Cookiaria" class="flinks git"><i class="fa-brands fa-github"></i></a> • 
+            <a href="https://twitter.com/Cookiaria" class="flinks twitter"><i class="fa-brands fa-twitter"></i></a> • 
+            <a href="https://bsky.app/profile/cookiaria.xyz" class="flinks bsky"><i class="fa-brands fa-bluesky"></i></a> •
+            <a href="https://www.youtube.com/@Cookiaria" class="flinks yt"><i class="fa-brands fa-youtube"></i></a> •
+            <a href="/discord" class="flinks discord"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

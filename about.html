@@ -1,52 +1,89 @@
 ---
 layout: default
-title: About
+title: dingus
 ---
 
+<!-- layout for me :333 because i suck at remembering things :333
+    <li (class="flip" if right)>
+        <figure>
+            <img src="[IMAGE]">
+            <figcaption class="imgsubtitle">[IMAGE_SUBTITLE(optional)]</a>
+            </figcaption>
+        </figure>
+        <div class="contenido-text">
+            [CONTENT]
+        </div
+-->
+
 <style>
-    figure {
-        position: fixed;
-        vertical-align: top;
-        display: inline-block;
-        text-align: center;
-        width: 248px;
-    }
-    figure img {
-        width: 256px;
-    }
-    .imgsubtitle {
-        display: block;
-        font-size: 12px;
-    }
-    .imgsubtitle a {
-        color: #f80;
-        text-decoration: none;
-    }
-    .imgsubtitle a:hover {
-        text-decoration: underline;
-    }
-    .about {
-        margin-left: 300px;
-    }
-    .curpfp {
-        width: 240px;
-        height: 240px;
-        border: 4px #31b780 solid;
-        border-radius: 64px;
-        background-image: url(/assets/curpfp.png);
-        background-size: contain;
-    }
+    @import url(/assets/css/figures.css);
+    .header1 {
+            border-bottom: 2px rgb(54, 54, 54) solid;
+            margin: 12px 20px !important;
+            padding: 5px 0 !important;
+            a {
+                color: #FFF;
+            }
+        }
 </style>
 
-<figure align="left">
-    <img class="curpfp" src="">
-    <figcaption class="imgsubtitle">art by <a href="https://twitter.com/ralseihugs">@ralseihugs</a></figcaption>
-</figure>
 
-<div class="about">
-    <h2>Heya! my name's Cookiaria!</h2>
-    <p style="font-size: 18px"> Honestly i don't know what to type here yet and honestly i dont really care im just gonna push these changes to github and continue this tomorrow lol <br> <br> <br> <br> <br> <br> <br> <br> 
+<ul id="contenido">
+
+    <li>
+        <figure>
+            <img class="curpfp" src="{{ site.pfp_link }}" width="240px">
+            <figcaption class="pfpcaption">art by <a href="{{ site.pfp_artist_link }}">@{{ site.pfp_artist_at }}</a>
+            </figcaption>
+        </figure>
+        <div class="contenido-text">
+            <h1>Heya, I'm <span style="color:rgb(249, 186, 135);">Cookiaria</span>! 🐈</h1>
+            <p>I'm a 20 year old furry person from <span style="font-size:24px">🇸🇻</span> El Salvador that goes by she/her; I love spending my time on the internet~<br> I speak English and Spanish!</p>
+        </div>
+    </li>
+
+    <h1 class="header1">
+        A few things i do!
+    </h1>
+
+        
+    <li>
+        <figure>
+            <img src="/assets/vibinhd.png" width="200px" height="200px">
+            <figcaption>art by me yippie</figcaption>
+        </figure>
+        <div class="contenido-text">
+            <h2>
+                I draw- sometimes!
+            </h2>
+            <p>
+                Been trying to draw for the past few years- <br>still wouldn't call it "great", personally; but i know some stuff! <br>
+                You can check some of my stuff at <a href="https://twitter.com/Cookiaria/media">my twitter!</a>*
+            </p>
+            <p>
+                <span style="font-size:12px;"> *I don't post that much, though</span>
+            </p>
+        </div>
+    </li>
+    
+    <li class="flip">
+        <figure>
+            <img src="/assets/glungus.png" width="200px">
+            <figcaption>this is just a placeholder please forgive me</figcaption>
+        </figure>
+        <div class="contenido-text">
+            <h2>
+                I mess with computers!
+            </h2>
+            <p>
+                Everything related to computers just fascinates me a lot! Mostly because i grew up with access to a computer with internet, that's also where i learned most of my english haha, Everything Windows and Linux interests me, here to hopefully share some of the knowledge I've gained over the past few years!
+            </p>
+        </div>
+    </li>
+
+    <p>
+        more to come soon <span class="jp">他に何を入力すればいいのかわかりません</span>
     </p>
-</div>
 
-<p>im cooked</p>
+</ul>
+

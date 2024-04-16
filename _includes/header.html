@@ -1,17 +1,19 @@
 <div id="tabs">
     <a href="/" class="tablinks"><i class="fa-solid fa-house"></i> Home</a>
-    <a href="blog" class="tablinks"><i class="fa-solid fa-file"></i> Blog</a>
-    <a href="about" class="tablinks"><i class="fa-solid fa-user"></i> About</a>
+    <a href="/blog" class="tablinks"><i class="fa-solid fa-file"></i> Blog</a>
+    <a href="/about" class="tablinks"><i class="fa-solid fa-user"></i> About</a>
+    <a href="/testingzone" class="tablinks"><i class="fa-solid fa-user"></i> testing crap</a>
+    <a href="/source" class="tablinks"><i class="fa-solid fa-user"></i> Source code redirect</a>
 </div>
 
 <header>
     <div class="divflex">
-        <img src="../assets/glungus.png" class="logo" id="idiote" align="left">
-        <audio id="prototype" src="../assets/meow.mp3"></audio>
+        <img src="{{ site.custom_logo }}" class="logo" id="idiote" align="left">
+        <audio id="prototype" src="/assets/meow.mp3"></audio>
     </div>
 
     <div class="headertext">
-        <p class="title"> <a href="javascript:displayRandomLine();" class="links notunderlined" title="click me get a random subtitle :3">Cookiaria Website</a></p>
+        <p class="title"> <a href="javascript:displayRandomLine();" class="links notunderlined" title="click me get a random subtitle">{{ site.header_title }}</a></p>
         <p id="random-subtitle"></p>
     </div>
 </header>

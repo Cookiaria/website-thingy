@@ -76,4 +76,3 @@ readTextFile('/assets/crack.txt', function(crack){
 
 console.log("caught in 8K UHD dolby digital surround sound HDR RTX 4090");
 
-

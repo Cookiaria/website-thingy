@@ -8,9 +8,7 @@ title: Cookiaria Website
 
 If you somehow stumbled uppon this site from discord, bluesky or anywhere else, welcome! this is just a (WIP !!) website to introduce and talk about myself to others 🐈
 
-In short (for now); I am Cookiaria. a 20 year old random furry person that's interested in webdev stuff, and just computers in general :3 <br>
-
-I made art sometimes, play games, and your usual furry bullshit.
+More about me [here~](/about)
 
 <div class="centerpls" style="font-size: 50px;">
 <span style="color: #5BCEFA;">Tr</span><span style="color: #F5A9B8;">an</span><span style="color: #FFFFFF;">s ri</span><span style="color: #F5A9B8;">gh</span><span style="color: #5BCEFA;">ts</span>.
@@ -30,16 +28,19 @@ for some reason browsers LOOOVE to cache shit and doesn't like updating my css f
 - Random subtitle message everytime user visits webpage or clicks the title
 - meow sound when clicking the cat !! 
 - Tabs that I might remove soon anyway lol
-- 404 page
+- 404 page - rededigned!
+- blog !!! still a work in progress
+- about page !!! still a wip
+- configurable logo and title from _config.yml!
 - more to come 𝓜𝓪𝔂𝓫𝓮...
 
 ## TODO
-- blog :xd:
-- actual about page
 - actual index page
-- honestly IDK please give me suggestions
+- finish blog layout
+- finish about me
+- 
+- honestly IDK what else to do please give me suggestions
 
-<br>
 <br>
 rate my codeblock css:
 
@@ -58,5 +59,16 @@ p code {
     border-radius: 4px;
     border: 2px rgb(61, 61, 61) solid;
     padding: 2px 4px;
+}
+```
+
+testing codeblocks dont mind me
+
+```javascript
+function backtotop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 }
 ```

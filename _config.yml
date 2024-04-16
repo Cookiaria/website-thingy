@@ -1,3 +1,17 @@
+###############################################
+# custom settings (like title and logo) go here
+
+header_title: Cookiaria Website
+custom_logo: /assets/glungus.png
+
+pfp_link: https://cdn.discordapp.com/avatars/698379761805819975/6e43cbbe930019ddb7d44f655fd067cb.webp?size=4096
+pfp_artist_link: https://twitter.com/ralseihugs
+pfp_artist_at: ralseihugs
+pfpacolor: 435DC2
+
+###################################################################
+# dont touch or it will break (this is held together with ducktape)
+
 markdown: kramdown
 highlighter: rouge
 
