@@ -38,7 +38,7 @@ for some reason browsers LOOOVE to cache shit and doesn't like updating my css f
 - actual index page
 - finish blog layout
 - finish about me
-- 
+- actually make a logo for this
 - honestly IDK what else to do please give me suggestions
 
 <br>
