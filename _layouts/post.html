@@ -17,7 +17,7 @@
     <meta name="google" content="nositelinkssearchbox">
 
     {% assign default_title = "Blog post" %}
-    <meta property="og:title" content="Cookiaria Website: {{ page.stitle | default: default_title }}" />
+    <meta property="og:title" content="Cookiaria Website: {{ page.title | default: default_title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cookiaria.xyz" />
 
@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#FF8600">
     <meta name="twitter:card" content="summary_large_image">
 
-    <title>{{ page.stitle | default: default_title }}</title>
+    <title>Cookiaria Website: {{ page.title | default: default_title }}</title>
 </head>
 
 <body>
@@ -37,6 +37,7 @@
             border-bottom: 1px rgb(54, 54, 54) solid;
             margin: 12px 20px !important;
             padding: 5px 0 !important;
+
             a {
                 color: #FFF;
             }
@@ -45,17 +46,44 @@
         .rightal {
             padding-left: 24px;
         }
-        
+
         .leftal {
             padding-right: 24px;
+        }
+
+        .content_tabs {
+            z-index: 9;
+            position: relative;
+            top: 38px;
+            left: 756px;
+            width: 125px
+        }
+
+        .content_tab {
+            padding-top: 6px;
         }
     </style>
 
     {% include header.html %}
 
+    {% if site.comments_toggle %}
+    <div class="content_tabs">
+        <a href="javascript:window.scrollTo(0, document.body.scrollHeight);" class="tablinks content_tab"><i class="nf nf-cod-triangle_down"></i> Comments</a>
+    </div>
+    {% endif %}
+
     <div class="actualcontent">
         {{ content }}
     </div>
+    <br>
+    <br>
+
+    
+    {% if site.comments_toggle %}
+    <script src="https://utteranc.es/client.js" repo="cookiaria/website-thingy" issue-term="pathname"
+        theme="photon-dark" crossorigin="anonymous" async>
+        </script>
+    {% endif %}
 
     {% include footer.html %}
 

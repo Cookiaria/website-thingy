@@ -1,11 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://www.nerdfonts.com/assets/css/webfont.css');
 @import url('/assets/css/codeblocks.css');
 
 @font-face {
-    font-family: 'Renogare-l';
-    src: url("/assets/renogare.otf");
+    font-family: "Renogare Regular";
+    src: url(/assets/renogare.otf) format("opentype");
+}
+
+.utterances {
+    max-width: 875px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.timeline-comment.current-user .comment-header {
+    background-color: #1d1d1d !important;
 }
 
 .jp {
@@ -21,13 +37,18 @@ a:hover {
     text-decoration: underline;
 }
 
-h1, h2, h3 {
-    font-family: 'Renogare-l';
-    font-weight: normal
+h1 {
+    font-family: 'Renogare Regular';
+    font-weight: 500;
+}
+
+h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 6px;
     height: 8px;
 }
 
@@ -48,7 +69,7 @@ body {
     position: relative;
     margin: 12px auto;
     max-width: 900px;
-    min-width: 730px;
+    min-width: 900px;
 }
 
 .notunderlined {
@@ -104,6 +125,7 @@ body {
 }
 
 .tablinks {
+    transition-duration: 0.25s;
     z-index: 9;
     position: relative;
     text-decoration: none;
@@ -112,26 +134,37 @@ body {
     font-weight: bold;
     font-size: 1.05em;
     margin-left: 8px;
-    padding-bottom: 1px;
+    padding-bottom: 24px;
     padding-left: 10px;
     padding-right: 10px;
     background-color: #222;
-    border: 2px rgb(190, 190, 190) solid;
-    box-shadow: 8px 8px rgb(24, 24, 24);
+    border: 1px rgb(55, 54, 54) solid;
+    bottom: 4px;
 }
+
+.tablinks:hover {
+    color: #F80;
+    padding-top: 6px !important;
+    bottom: 6px;
+    text-decoration: none !important;
+}
+
 
 header {
     z-index: 10;
-    position:relative;
+    position: relative;
     background: #222;
     height: 110px;
-    border: 2px rgb(190, 190, 190) solid;
+    border: 1px rgb(55, 54, 54) solid;
     background-image: url(/assets/vibin.png);
     background-size: 250px 250px;
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: -36px;
-    box-shadow: 8px 8px rgb(24, 24, 24);
+}
+
+header, .tablinks, .actualcontent {
+    box-shadow: 8px 8px rgb(29,29,29);
 }
 
 .logo {
@@ -166,10 +199,7 @@ header {
 }
 
 
-.tablinks:hover {
-    color: #008cff;
-    text-decoration: none !important;
-}
+
 
 #tabs {
     margin-top: 24px;
@@ -180,12 +210,16 @@ header {
 }
 
 .actualcontent {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 10;
+    position: relative;
     margin-top: 40px;
-    border: 2px rgb(55, 54, 54) solid;
+    background-color: #222222;
+    border: 1px rgb(55, 54, 54) solid;
     color: white;
-    font-size: 1.2em;
-    box-shadow: 8px 8px rgb(24, 24, 24);
+    font-size: 18px;
 }
 
 /* everything markdown related */
@@ -199,8 +233,7 @@ header {
     h5,
     h6 {
         margin: 5px 0;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 8px 20px;
     }
 }
 
@@ -226,5 +259,15 @@ footer {
 
 .centerpls {
     text-align: center !important;
+}
+
+code, code > .nf {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size: 18px;
+}
+
+blockquote {
+    border-left: 4px #ff8600 solid;
+
 }
 

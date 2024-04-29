@@ -1,0 +1,16 @@
+---
+layout: default
+title: Changelogs
+---
+
+<h1>
+    Changelogs ‼
+</h1>
+
+<ul>
+    {% for changelog in site.changelog reversed %}
+    <li>
+      <h2 class="post-title"><a href="{{ changelog.url }}">{{ changelog.title }}</a></h2>
+    </li>
+    {% endfor %}
+  </ul>

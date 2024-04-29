@@ -12,21 +12,43 @@
     <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/assets/xd.png">
 
-    <meta name="description" content="Welcome to my little dumb project :3">
+    <meta name="description" content="List of all posts i've made!!">
     <meta name="google" content="nositelinkssearchbox">
 
-    <meta property="og:title" content="Cookiaria Website" />
+    <meta property="og:title" content="Cookiaria Website: List of posts" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cookiaria.xyz" />
-    <meta property="og:image" content="https://cookiaria.xyz/assets/embed_banner.png" />
-    <meta property="og:description" content="what's up" />
+
+    {% assign default_banner = "/assets/embed_banner.png" %}
+    <meta property="og:image" content="{{ page.banner | default: default_banner }}" />
+    <meta property="og:description" content="{{ page.description | default: default_description }}" />
     <meta name="theme-color" content="#FF8600">
     <meta name="twitter:card" content="summary_large_image">
 
-    <title>{{ page.title }}</title>
+    <title>List of posts</title>
 </head>
 
 <body>
+
+    <style>
+        h1 {
+            border-bottom: 1px rgb(54, 54, 54) solid;
+            margin: 12px 20px !important;
+            padding: 5px 0 !important;
+
+            a {
+                color: #FFF;
+            }
+        }
+
+        .rightal {
+            padding-left: 24px;
+        }
+
+        .leftal {
+            padding-right: 24px;
+        }
+    </style>
 
     {% include header.html %}
 

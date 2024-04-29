@@ -17,73 +17,182 @@ title: dingus
 
 <style>
     @import url(/assets/css/figures.css);
-    .header1 {
-            border-bottom: 2px rgb(54, 54, 54) solid;
-            margin: 12px 20px !important;
-            padding: 5px 0 !important;
-            a {
-                color: #FFF;
-            }
-        }
-</style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+    .header1 {
+        border-bottom: 2px rgb(54, 54, 54) solid;
+        margin: 12px 20px !important;
+        padding: 5px 0 !important;
+
+        a {
+            color: #FFF;
+        }
+    }
+
+    [class*=sm_] {
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+        display: inline;
+        position: relative;
+        text-decoration: none;
+        background-color: #363636;
+        transition-duration: 0.25s;
+        color: rgb(241, 241, 241);
+        margin: 0 8px;
+        padding-bottom: 24px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        box-shadow: 6px 6px rgb(20, 20, 20);
+
+        i {
+            font-size: 22px;
+        }
+    }
+
+    #contenido > div > li > div > h1, #contenido > li:nth-child(13) > div > h1 {
+        font-size: 38px;
+        position: relative;
+        top: 14px;
+    }
+
+    #contenido > li:nth-child(1) > div > h1 {
+        position: relative;
+        top: 14px;
+    }
+
+    .socials {
+        font-size: 20px;
+        display: block;
+        margin-left: 90px
+    }
+
+    .sm_twitter:hover {
+        background-color: #00ACEE;
+        text-decoration: none;
+    }
+
+    .sm_youtube:hover {
+        background-color: #FF0000;
+        text-decoration: none;
+    }
+
+    .sm_github:hover {
+        background-color: #000000;
+        text-decoration: none;
+    }
+
+</style>
 
 <ul id="contenido">
 
     <li>
         <figure>
-            <img class="curpfp" src="{{ site.pfp_link }}" width="240px">
+            <img class="curpfp" src="{{ site.pfp_link }}" width="225px">
             <figcaption class="pfpcaption">art by <a href="{{ site.pfp_artist_link }}">@{{ site.pfp_artist_at }}</a>
             </figcaption>
         </figure>
-        <div class="contenido-text">
-            <h1>Heya, I'm <span style="color:rgb(249, 186, 135);">Cookiaria</span>! 🐈</h1>
-            <p>I'm a 20 year old furry person from <span style="font-size:24px">🇸🇻</span> El Salvador that goes by she/her; I love spending my time on the internet~<br> I speak English and Spanish!</p>
+        <div>
+            <h1 style="text-align: center; font-size: 38px;">Heya, I'm Cookiaria! ✨</h1>
+            <p  style="text-align: center;">
+                I'm a 20 year old furry person from El Salvador. <br>
+                I speak Spanish and English, and i just make stuff for the internet! <br> <br>
+
+            <div class="socials">
+                <a href="https://twitter.com/Cookiaria" class="sm_twitter">
+                    <i class="nf nf-fa-twitter"></i>&nbsp; Twitter
+                </a>
+                <a href="https://www.youtube.com/@Cookiaria" class="sm_youtube">
+                    <i class="nf nf-fa-youtube"></i>&nbsp; Youtube
+                </a>
+                <a href="https://github.com/Cookiaria" class="sm_github">
+                    <i class="nf nf-cod-github"></i>&nbsp; Github
+                </a>
+            </div>
+
+            </p>
         </div>
     </li>
+
+    {% if site.didyouactuallyfinishthis %}
 
     <h1 class="header1">
         A few things i do!
     </h1>
 
-        
-    <li>
+    <li style="align-items:normal;">
         <figure>
             <img src="/assets/vibinhd.png" width="200px" height="200px">
             <figcaption>art by me yippie</figcaption>
         </figure>
         <div class="contenido-text">
             <h2>
-                I draw- sometimes!
+                I code stuff whenever i feel like it
             </h2>
             <p>
-                Been trying to draw for the past few years- <br>still wouldn't call it "great", personally; but i know some stuff! <br>
-                You can check some of my stuff at <a href="https://twitter.com/Cookiaria/media">my twitter!</a>*
+                I am currently in the process of learning Python, HTML, CSS and Javascript. I made this website
+                (including css and jekyll theme) from scratch! Javascript stuff has been with the help of some friends.
+                <br> <br>
+                I am also working on a hitsound renderer for the game "A Dance of Fire and Ice" made in python, not much
+                progress done on that yet though lol
             </p>
+        </div>
+    </li> <br>
+
+    <h1 class="header1">
+        A list of games I like! <span style="font-size: 14px;">(last updated: 23-apr-2024)</span>
+    </h1>
+
+    <li class="flip">
+        <figure>
+            <img src="/assets/icons/pancakes.png" title="Niko from OneShot" width="200px">
+            <figcaption>"I'm not a cat!"</figcaption>
+        </figure>
+        <div class="contenido-text">
+            <img src="/assets/logos/oneshot.png" width="350px;">
+            <p> 
+                OMG I LOVE THIS GAME SO MUCH <br>
+                I've replayed this game so many times (specially the World Machine Edition) and it never fails to make me emotional ;; <br>
+                niko from one shot... comfort character creature...
+            </p>
+        </div>
+    </li> <br>
+
+    <!-- regretevator -->
+    <li class="flip">
+        <figure>
+            <img src="/assets/gregoriah/speaking.gif" title="Gregoriah from Regretevator" width="200px">
+            <figcaption>"This building has been here<br>for over 400 years!"</figcaption>
+        </figure>
+        <div class="contenido-text">
+            <img src="/assets/logos/regretevator.png" width="350px"><span style="font-size: 8px; color:#3d3d3d;">(please save me)</span>
             <p>
-                <span style="font-size:12px;"> *I don't post that much, though</span>
+                A Roblox game; introduced to me by one of my friends (hi avery!!) sometime around in february;
+                i've been playing it since! <br> <br>
+                - Currently at 3752 floors and counting!
             </p>
         </div>
     </li>
     
-    <li class="flip">
-        <figure>
-            <img src="/assets/glungus.png" width="200px">
-            <figcaption>this is just a placeholder please forgive me</figcaption>
-        </figure>
-        <div class="contenido-text">
-            <h2>
-                I mess with computers!
-            </h2>
-            <p>
-                Everything related to computers just fascinates me a lot! Mostly because i grew up with access to a computer with internet, that's also where i learned most of my english haha, Everything Windows and Linux interests me, here to hopefully share some of the knowledge I've gained over the past few years!
-            </p>
-        </div>
-    </li>
-
+    <h2>
+        Other
+    </h2>
     <p>
-        more to come soon <span class="jp">他に何を入力すればいいのかわかりません</span>
+        Geometry Dash <br>
+        Terraria <br>
+        A Dance of Fire and Ice <br>
+        Rhythm Doctor <br>
+    </p>
+        
+    <h1 class="header1">
+        Some really cool people I know!!
+    </h1>
+
+    {% include friends.html %}
+
+    {% endif %}
+
+    <p class="centerpls">
+        still unfinished for now !! im lazy <img src="/assets/paw.png" style="width: 1em; height: 1em; vertical-align: middle; padding-bottom: 0.2em;">
     </p>
 
 </ul>
-

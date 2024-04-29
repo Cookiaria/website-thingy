@@ -3,6 +3,9 @@
 
 header_title: Cookiaria Website
 custom_logo: /assets/glungus.png
+footer_text: 
+
+comments_toggle: true
 
 pfp_link: https://cdn.discordapp.com/avatars/698379761805819975/6e43cbbe930019ddb7d44f655fd067cb.webp?size=4096
 pfp_artist_link: https://twitter.com/ralseihugs
@@ -14,4 +17,15 @@ pfpacolor: 435DC2
 
 markdown: kramdown
 highlighter: rouge
+
+didyouactuallyfinishthis: false
+
+collections: 
+  things:
+    output: true
+    permalink: /post/:name
+  changelog:
+    output: true
+    permalink: /changelog/:name
+
 

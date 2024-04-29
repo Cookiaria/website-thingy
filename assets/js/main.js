@@ -21,8 +21,12 @@ async function displayRandomLine() {
   const dom = parser.parseFromString(randomLine, 'text/html');
   document.getElementById('random-subtitle').innerHTML = "";
   document.getElementById('random-subtitle').append(...dom.body.childNodes);
-}
 
+  // heardle
+  const unixTimestamp = 1704693600000;
+  const dayssincestart = Math.floor((Date.now() - unixTimestamp) / 8.64e7);
+  document.getElementById('uheardleday').innerText = dayssincestart
+}
 
 displayRandomLine();
 
@@ -44,17 +48,17 @@ function backtotop() {
 // funny console log stuff because why not
 console.log("what are you doing here");
 
-console.image = function(url, size = 100) {
+console.image = function (url, size = 100) {
   const image = new Image();
   image.src = url;
-  image.onload = function() {
+  image.onload = function () {
     var style = [
       'font-size: 1px;',
-      'padding: ' + this.height/100*size + 'px ' + this.width/100*size + 'px;',
-      'background: url('+ url +') no-repeat;',
+      'padding: ' + this.height / 100 * size + 'px ' + this.width / 100 * size + 'px;',
+      'background: url(' + url + ') no-repeat;',
       'background-size: contain;'
-     ].join(' ');
-     console.log('%c ', style);
+    ].join(' ');
+    console.log('%c ', style);
   };
 };
 
@@ -70,9 +74,15 @@ function readTextFile(file, callback) {
   rawFile.send(null);
 }
 
-readTextFile('/assets/crack.txt', function(crack){
+readTextFile('/assets/crack.txt', function (crack) {
   console.image(crack, 40);
 });
 
 console.log("caught in 8K UHD dolby digital surround sound HDR RTX 4090");
+console.log("while you're here please ignore the \"uncaught \(in promise\)\" errors its just for a stupid easter egg that has a 0.1% chance of appearing anyway")
+
+
+// heardle
+// Unix timestamp
+
 

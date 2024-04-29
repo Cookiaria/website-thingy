@@ -23,12 +23,36 @@ ul {
     margin-bottom: 1em;
 }
 
+/* this is held together with ducktape */
 #contenido li.flip {
     flex-direction: row-reverse;
-    .contenido-text {
+}
+
+#contenido li > div {
+    flex: 1;
+}
+
+
+/* specifically for friends.html
+#contenido li.flipf {
+    flex-direction: row-reverse;
+}
+
+#contenido li.flipf div {
+    text-align: right;
+}
+*/
+
+.thisisamess li:nth-child(2n) {
+    flex-direction: row-reverse;
+    div {
         text-align: right;
     }
 }
+
+/* *********** */
+
+
 
 .contenido-text * {
     margin: 0 !important;
