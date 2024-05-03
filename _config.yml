@@ -5,9 +5,13 @@ header_title: "Cookiaria Website"
 custom_logo: "/assets/glungus.png"
 footer_text: ""
 
-pfp_link: "https://cdn.discordapp.com/avatars/698379761805819975/252a150859ffffc805fb49bf3449a62f.webp?size=4096"
-pfp_artist_link: "https://twitter.com/ralseihugs"
-pfp_artist_at: "ralseihugs"
+####################################
+# pfp updated thing with credit :333
+
+pfp_credit: false
+pfp_link: "https://cdn.discordapp.com/avatars/698379761805819975/9e697764fbdc90f9b9035fee45f4454b.webp?size=4096"
+pfp_artist_link: "null"
+pfp_artist_at: "null"
 pfpacolor: "#2db67e"
 
 comments_toggle: true
@@ -18,7 +22,7 @@ comments_toggle: true
 accent_color: "#FF8600"
 embed_description: "check out my Cool Website"
 large_image: true
-embed_image: "https://cookiaria.xyz/assets/embed_banner.png"
+embed_image: https://cookiaria.xyz/assets/embed_banner.png
 
 
 #############################

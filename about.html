@@ -74,8 +74,10 @@ title: About me
     <li>
         <figure>
             <img class="curpfp" src="{{ site.pfp_link }}" width="225px">
+            {% if pfp_credit %}
             <figcaption class="pfpcaption">art by <a href="{{ site.pfp_artist_link }}">@{{ site.pfp_artist_at }}</a>
             </figcaption>
+            {% endif %}
         </figure>
         <div>
             <h1 style="text-align: center; font-size: 38px;">Heya, I'm Cookiaria! ✨</h1>
