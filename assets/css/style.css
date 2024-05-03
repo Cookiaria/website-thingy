@@ -1,4 +1,3 @@
-
 /*  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -9,7 +8,7 @@
 
 @font-face {
     font-family: "Renogare Regular";
-    src: url(/assets/renogare.otf) format("opentype");
+    src: url(/assets/fonts/renogare.otf) format("opentype");
 }
 
 .utterances {
@@ -42,7 +41,8 @@ h1 {
     font-weight: 500;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
@@ -65,12 +65,40 @@ h2, h3 {
     background: #555;
 }
 
-body {
+.bodydiv {
     position: relative;
     margin: 12px auto;
     max-width: 900px;
     min-width: 900px;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/assets/waves.svg');
+    background-color: #222222;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+}
+
+/*
+.footerdingus {
+    position: relative;
+    aspect-ratio: 900/182;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/assets/waves.svg');
+} */
 
 .notunderlined {
     text-decoration: none !important;
@@ -99,10 +127,6 @@ img.emoji {
     width: 1em;
     margin: 0 .05em 0 .1em;
     vertical-align: -0.1em;
-}
-
-body {
-    background-color: #222;
 }
 
 .headertext p {
@@ -163,8 +187,10 @@ header {
     background-position-y: -36px;
 }
 
-header, .tablinks, .actualcontent {
-    box-shadow: 8px 8px rgb(29,29,29);
+header,
+.tablinks,
+.actualcontent {
+    box-shadow: 8px 8px rgb(29, 29, 29);
 }
 
 .logo {
@@ -219,7 +245,8 @@ header, .tablinks, .actualcontent {
     background-color: #222222;
     border: 1px rgb(55, 54, 54) solid;
     color: white;
-    font-size: 18px;
+    font-size: 18px;    
+    min-height: 25vh;
 }
 
 /* everything markdown related */
@@ -245,7 +272,9 @@ header, .tablinks, .actualcontent {
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    position: relative;
     font-family: 'Ubuntu Mono', monospace;
     color: white;
     text-align: center;
@@ -261,7 +290,8 @@ footer {
     text-align: center !important;
 }
 
-code, code > .nf {
+code,
+code>.nf {
     font-family: 'Ubuntu Mono', monospace !important;
     font-size: 18px;
 }
@@ -271,3 +301,13 @@ blockquote {
 
 }
 
+.customemoji {
+    width: 1.4em;
+    height: 1.4em;
+    vertical-align: middle;
+    padding-bottom: 0.2em;
+}
+
+img {
+    -webkit-user-drag: none;
+}

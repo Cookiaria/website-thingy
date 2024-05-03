@@ -62,8 +62,17 @@
         .content_tab {
             padding-top: 6px;
         }
-    </style>
 
+        body > div.actualcontent > p > img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            border: 1px rgb(54, 54, 54) solid;
+            max-width: 858px;
+            min-width: 200px;
+        }
+    </style>
+<div class="bodydiv">
     {% include header.html %}
 
     {% if site.comments_toggle %}
@@ -86,7 +95,7 @@
     {% endif %}
 
     {% include footer.html %}
-
+</div>
 </body>
 
 </html>

@@ -1,29 +1,37 @@
 ###############################################
 # custom settings (like title and logo) go here
 
-header_title: Cookiaria Website
-custom_logo: /assets/glungus.png
-footer_text: 
+header_title: "Cookiaria Website"
+custom_logo: "/assets/glungus.png"
+footer_text: ""
+
+pfp_link: "https://cdn.discordapp.com/avatars/698379761805819975/252a150859ffffc805fb49bf3449a62f.webp?size=4096"
+pfp_artist_link: "https://twitter.com/ralseihugs"
+pfp_artist_at: "ralseihugs"
+pfpacolor: "#2db67e"
 
 comments_toggle: true
 
-pfp_link: https://cdn.discordapp.com/avatars/698379761805819975/252a150859ffffc805fb49bf3449a62f.webp?size=4096
-pfp_artist_link: https://twitter.com/ralseihugs
-pfp_artist_at: "ralseihugs"
-pfpacolor: 2db67e
+##############################
+# default discord embed things 
 
-###################################################################
+accent_color: "#FF8600"
+embed_description: "check out my Cool Website"
+large_image: true
+embed_image: "https://cookiaria.xyz/assets/embed_banner.png"
+
+
+#############################
 # dont touch or it will break (this is held together with ducktape)
+
+excerpt_separator: <!--bungus-->
 
 markdown: kramdown
 highlighter: rouge
 
-didyouactuallyfinishthis: false
-
 collections: 
   things:
     output: true
-    permalink: /post/:name
   changelog:
     output: true
     permalink: /changelog/:name

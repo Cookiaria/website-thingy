@@ -3,14 +3,32 @@ layout: default
 title: Changelogs
 ---
 
+<style>
+    .stuffs ul {
+    background-color: #1c1c1c;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 75px;
+    max-height: 150px;
+    p {
+      padding-left: 10px;
+    }
+  }
+</style>
+
 <h1>
     Changelogs ‼
 </h1>
 
-<ul>
-    {% for changelog in site.changelog reversed %}
-    <li>
-      <h2 class="post-title"><a href="{{ changelog.url }}">{{ changelog.title }}</a></h2>
-    </li>
-    {% endfor %}
+<div class="stuffs">
+  {% for changelog in site.changelog reversed %}
+  <ul>
+    <h2 class="post-title"> <a href="{{ changelog.url }}">{{ changelog.title }}</a></h2> 
+    <p>{{ changelog.excerpt | markdownify | strip_html }}</p>
+  <br>
   </ul>
+  {% endfor %}
+</div>

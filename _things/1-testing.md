@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First post
+date: 28-Apr-2024
 description: whats up discord users
 ---
 

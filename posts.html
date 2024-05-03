@@ -18,17 +18,36 @@ title: Posts
   .post-content {
     padding-right: 40px !important;
   }
+
+  body > div.actualcontent > ul > p {
+    padding: 4px 0px;
+  }
+
+  .stuffs ul {
+    background-color: #1c1c1c;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 125px;
+    p {
+      padding-left: 10px;
+    }
+  }
 </style>
 
-<h1>Latest Posts</h1>
+{% include search-lunr.html %}
 
-<ul>
+
+<div class="stuffs">
   {% for things in site.things reversed %}
-  <li>
-    <h2 class="post-title"><a href="{{ things.url }}">{{ things.title }}</a></h2>
-  </li>
+  <ul>
+    <h2 class="post-title"> <a href="{{ things.url }}">{{ things.title }}</a> <span style="font-size: 0.5em; color: grey;">{{ things.date | date: "%-d %b, %Y" }}</span></h2> 
+    <p>{{ things.content | markdownify | replace: '</h1>', ' > ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '<br>', ', ' | strip_html | truncate: 170 }}</p> <br>
+  </ul>
   {% endfor %}
-</ul>
+</div>
 
-<h2><a href="/changelogs">Changelogs ></a></h2>
+<h2><a href="/changelogs" style="color: white; text-decoration: underline;">Changelogs ></a></h2>
 

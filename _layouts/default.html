@@ -5,37 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/assets/xd.png" />
+
+    <!-- scripts from other sources IDK -->
+    <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/assets/xd.png">
+    <script src="/assets/js/main.js" defer></script>
 
-    <meta name="description" content="Welcome to my little dumb project :3">
-    <meta name="google" content="nositelinkssearchbox">
-
+    <!-- i love discord !!!!!! i love discord embedding !!!!!!-->
     <meta property="og:title" content="Cookiaria Website" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cookiaria.xyz" />
-    <meta property="og:image" content="https://cookiaria.xyz/assets/embed_banner.png" />
-    <meta property="og:description" content="what's up" />
-    <meta name="theme-color" content="#FF8600">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{ site.banner_image }}" />
+    <meta property="og:description" content="{{ site.embed_description }}" />
+    <meta name="theme-color" content="{{ site.accent_color }}" />
+
+    {% if site.large_image %}
+    <meta name="twitter:card" content="summary_large_image" />
+    {% endif %}
 
     <title>{{ page.title }}</title>
 </head>
 
 <body>
 
+<div class="bodydiv">
     {% include header.html %}
 
     <div class="actualcontent">
         {{ content }}
     </div>
-
-    {% include footer.html %}
-
+</div>
+{% include footer.html %}
 </body>
 
 </html>
