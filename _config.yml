@@ -32,6 +32,7 @@ highlighter: rouge
 collections: 
   things:
     output: true
+    permalink: /post/:name
   changelog:
     output: true
     permalink: /changelog/:name
